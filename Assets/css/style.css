@@ -696,10 +696,67 @@ flex-direction: column;
     width: 200px;
 }
 
+/* complete infos page*/
+
+.completeinfos{
+    width:100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 200px auto;
+    grid-template-areas:
+        "header"
+        "main";
+}
+
+.completeinfosheader{
+    grid-area: header;
+}
+
+.completeinfosheader div{
+    background:linear-gradient(
+        rgba(48, 140, 186, 0.77), 
+        rgba(48, 140, 186, 0.77)
+      ),url('../images/completeinfos.png');
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.completeinfosheader div h2{
+    color: white;
+    align-self: center;
+    text-align: center;
+}
+
+.completeinfosmain{
+    grid-area: main;
+}
+
+.completeinfosmain div form > input{
+    font-size: 30px;
+    margin: 20px;
+    background-color: #DBDBDB;
+    border: 0px solid transparent;
+    border-right: 12px solid #308CBA;
+    padding: 10px;
+    text-align-last: right;
+}
+.completeinfosmain div form > textarea{
+    font-size: 30px;
+    margin: 20px;
+    background-color: #DBDBDB;
+    border: 0px solid transparent;
+    border-right: 12px solid #308CBA;
+    padding: 10px;
+    text-align-last: right;
+}
+/* media queries and attributes changes*/
 ::placeholder{
     color:white;
     opacity: 60%;
 }
+
 @media(max-width:880px){
     .section3 .section3-right {
         text-align: center;
