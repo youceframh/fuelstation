@@ -769,19 +769,24 @@ flex-direction: column;
     grid-template-rows: 150px auto;
     overflow-y: scroll;
     position: relative;
+    grid-template-areas: "header"
+    "main";
     
 }
+
 .mainofdashboardmaincontent{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    grid-area: main;
 }
 .headerofdashboardmaincontent {
     padding: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    grid-area: header;
 }
 .headerofdashboardmaincontent .one{
     position: relative;
@@ -869,11 +874,89 @@ flex-direction: column;
 .mainofdashboardmaincontentsect3{
     margin:20px;
 }
+
+/* Dashboard of userprofile*/
+.mainofcontentuserprofile .one{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.mainofcontentuserprofile .two{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.mainofcontentuserprofile .one .usernameandimg{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+    text-align: center;
+}
+.mainofcontentuserprofile .one .usernameandimg h2{
+    margin:20px;
+}
+.mainofcontentuserprofile{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.mainofcontentuserinfos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 /* media queries and attributes changes*/
 ::placeholder{
     color:white;
     opacity: 60%;
 }
+/* General assets */
+
+.inputype2container{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.inputsofuserprofile{
+    width: 100%;
+}
+
+.inputsofuserprofile i{
+    font-size: 30px;
+    padding: 10px;
+    margin-left: -2.3rem;
+}
+
+.inputsofuserprofile form{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.inputsofuserprofile form .submitformofuserinfos{
+    margin-top: 50px;
+}
+.inputype2container input{
+    width: 70%;
+    border: 0px;
+    border-bottom: 3px solid #308CBA;
+    text-align: end;
+    padding-right: 2.3rem;
+    outline: none;
+    font-size: 30px;
+ }
 
 @media(min-width:250px){
     .section2 .section2content > div{
@@ -991,6 +1074,14 @@ flex-direction: column;
     .sendresetpassword{
         font-size: 50px;
         width: 400px;
+    }
+}
+@media(max-width:695px){
+    .inputype2container {
+        display: flex;
+        width: 400px;
+        justify-content: center;
+        margin: 20px 0px 20px 0px;
     }
 }
 /*customized scroll bar*/
