@@ -913,7 +913,16 @@ flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
+/* dashboard add task */
+.dashboardaddtask div form > input{
+    font-size: 30px;
+    margin: 20px;
+    background-color: #DBDBDB;
+    border: 0px solid transparent;
+    border-right: 12px solid #308CBA;
+    padding: 10px;
+    text-align-last: right;
+}
 /* media queries and attributes changes*/
 ::placeholder{
     color:white;
@@ -958,6 +967,101 @@ flex-direction: column;
     font-size: 30px;
  }
 
+ .inputype1container{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    margin: 20px 0px 20px 0px;
+ }
+
+ .inputype1container input{
+    font-size: 30px;
+    margin: 20px;
+    background-color: white;
+    border: 1px solid #308CBA;
+    border-right: 12px solid #308CBA;
+    padding: 10px;
+    text-align: right;
+    width: 70%;
+    display: flex;
+    flex-direction: row-reverse;
+ }
+
+ .inputype1container select{
+    font-size: 30px;
+    margin: 20px;
+    background-color: white;
+    border: 1px solid #308CBA;
+    border-right: 12px solid #308CBA;
+    padding: 10px;
+    text-align: right;
+    width: 70%;
+    text-align-last: right;
+    color: #308CBA;
+    display: flex;
+    flex-direction: row-reverse;
+ }
+
+ .inputype1container textarea{
+    font-size: 30px;
+    margin: 20px;
+    background-color: white;
+    border: 1px solid #308CBA;
+    border-right: 12px solid #308CBA;
+    padding: 10px;
+    text-align: right;
+    width: 85%;
+    text-align-last: right;
+    color: #308CBA;
+    display: flex;
+    flex-direction: row-reverse;
+ }
+ .inputype1container select option{
+    text-align: right;
+    color: #308CBA;
+    background-color:white;
+    text-align-last: right;
+ }
+.inputsofuserprofile .checkings{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+
+.inputsofuserprofile .checkings .radiochecking{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.inputsofuserprofile .checkings .radiochecking div{
+    margin:10px;
+}
+.inputsofuserprofile .checkings .radiochecking div > input{
+    transform: scale(2.2);
+    margin:10px;
+}
+
+.inputsofuserprofile .checkings .checkboxchecking{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.inputsofuserprofile .checkings .checkboxchecking div{
+    margin:10px;
+}
+.inputsofuserprofile .checkings .checkboxchecking div > input{
+    transform: scale(2.2);
+    margin:10px;
+}
+.inputsofuserprofilebuttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+ /* Media querie */
 @media(min-width:250px){
     .section2 .section2content > div{
         width: 250px;
