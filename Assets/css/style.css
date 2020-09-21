@@ -1061,6 +1061,184 @@ flex-direction: column;
     justify-content: space-around;
     flex-direction: row-reverse;
 }
+
+/* Dashboard balence */
+.mainofdashboardblence{
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+}
+#dashboardbalance{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 440px auto 90px;
+    grid-template-areas: "letstransactions main sidebar";
+}
+
+#dashboardbalance .latesttransactions{
+    grid-area: letstransactions;
+    border-radius: 0px 50px 50px 0px;
+    -webkit-box-shadow: 3px 3px 3px 3px rgba(0,0,0,.2);
+        -moz-box-shadow: 3px 3px 3px 3px rgba(0,0,0,.2);
+        box-shadow: 3px 3px 3px 3px rgba(0,0,0,.2);
+        padding: 20px;
+        height: 100vh;
+        overflow: scroll;
+}
+    /*customized scroll bar*/
+.latesttransactions::-webkit-scrollbar {
+     width: 0px;
+     height: 0px;
+}
+.searchbaroflatesttransactions{
+    display: flex;
+    justify-content: center;
+}
+.searchbaroflatesttransactions div{
+    position: relative;
+    display: flex;
+}
+.searchbaroflatesttransactions div input{
+    border-radius: 75px;
+    border: 0px;
+    -webkit-box-shadow: 3px 3px 3px 3px rgba(0,0,0,.2);
+    -moz-box-shadow: 3px 3px 3px 3px rgba(0,0,0,.2);
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,.2);
+    text-align: end;
+    outline: none;
+    padding: 0.5rem 2rem 0.5rem 0.5rem;
+    font-size: 1.4rem;
+    
+}
+.searchbaroflatesttransactions div i {
+    align-self: center;
+    right: 0.5rem;
+    position: absolute;
+}
+
+.userinformationsoflatesttransactions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+.userinformationsoflatesttransactions .Qrcode{
+    width: 120px;
+    height: 120px;
+    border: 1px solid #308CBA;
+    background-color: #308CBA;
+    margin: 20px;
+}
+
+.userinformationsoflatesttransactions .userinfos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userinformationsoflatesttransactions .userinfos span:nth-child(1){
+    color: #308CBA;
+    font-size: 28px;
+}
+.userinformationsoflatesttransactions .userinfos span:nth-child(2){
+    font-size: 28px;
+}
+
+.latesttransactionsoflatesttransactionsdiv{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px;
+}
+
+.latesttransactionsoflatesttransactionsdiv span:nth-child(1){
+    font-size: 28px;
+    color: #308CBA;
+    align-self: flex-end;
+}
+
+.latesttransactionsoflatesttransactionsdiv .transactionresponsible{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.latesttransactionsoflatesttransactionsdiv .transactionresponsible .right{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.latesttransactionsoflatesttransactionsdiv .transactionresponsible .left span{
+    font-size: 18px;
+    color: green;
+   
+}
+
+.latesttransactionsoflatesttransactionsdiv .transactionresponsible .right .infosoftheresponsibleoftransaction{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+}
+
+.latesttransactionsoflatesttransactionsdiv .transactionresponsible .right .infosoftheresponsibleoftransaction span:nth-child(1){
+    color: #308CBA;
+    font-size: 18px;
+}
+
+.latesttransactionsoflatesttransactionsdiv .transactionresponsible .right .infosoftheresponsibleoftransaction span:nth-child(2){
+    color: black;
+    font-size: 18px;
+}
+
+
+.latesttransactionsoflatesttransactionsdiv .transactionresponsible .right img{
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+}
+
+.totalbalence{
+    background: rgb(48,140,186);
+    background: linear-gradient(90deg, rgba(48,140,186,1) 25%, rgba(24,70,93,1) 75%);
+    color: white;
+    width: 500px;
+    padding: 30px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+    align-self: flex-end;
+}
+.totalbalence .totalblancemoney{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.totalbalence .currentmoney{
+    text-align: right;
+}
+.totalbalence .currentmoney span:nth-child(1){
+    font-size: 37px;
+}
+.totalbalence .currentmoney span:nth-child(2){
+    font-size: 60px;
+}
+.totalbalence .lastmonthmoney{
+    align-self: center;
+}
+.totalbalence .lastmonthmoney span:nth-child(1){
+    font-size: 24px;
+}
+.totalbalence .lastmonthmoney span:nth-child(2){
+    font-size: 44px;
+}
+
+
  /* Media querie */
 @media(min-width:250px){
     .section2 .section2content > div{
